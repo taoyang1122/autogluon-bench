@@ -8,11 +8,11 @@ root_dir: ag_bench_runs  # optional, default = "ag_bench_runs"
 # Multimodal specific
 framework: AutoGluon_stable  # required
 dataset_name:  # required
-  melbourne_airbnb  
+  bayer  
 
 #### Customizations ####
 # custom_resource_dir: sample_configs/resources/  # path to custom multimodal_frameworks.yaml and multimodal_constraints.yaml
-# custom_dataloader:
-#     dataloader_file: sample_configs/dataloaders/vision_dataloader.py   # relative path to WORKDIR
-#     class_name: VisionDataLoaer
-#     dataset_config_file: sample_configs/dataloaders/vision_datasets.yaml 
+custom_dataloader:
+    dataloader_file: sample_configs/dataloaders/vision_dataloader.py   # relative path to WORKDIR
+    class_name: VisionDataLoaer
+    dataset_config_file: sample_configs/dataloaders/automm_cv_datasets.yaml
